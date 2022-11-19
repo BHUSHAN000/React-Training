@@ -1,3 +1,21 @@
+/**
+ *  * again same example 
+ * 
+ * 
+ *  * Program for updating phase in class components as child component
+ *  * It have 5 lifecycle methods
+ *  * first lifecycle method in updating phase => static getDerivedStateFromProps(props, state)
+ * * second lifecycle method => shouldComponentUpdate(nextProps,nextState)
+ * * third lifecycle method => render()
+ * * fourth lifecycle method => getSnapshotBeforeUpdate(prevProps,prevState)
+ * * fifth lifecycle method => componentDidUpdate(prevProps,prevState,snapshot)
+ * 
+ * * It also includes unmounting phase in the same class component 
+ * * it only have 1 method 
+ * * method is => componentWillUnmount()
+
+
+ */
 import React from "react";
 
 export default class Test10 extends React.Component {

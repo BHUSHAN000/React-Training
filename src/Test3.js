@@ -1,7 +1,7 @@
 /**
- * program for just testing props value on child component 
- * but we needed to pass name prop from parent component
- * like <App name='bhushan' />
+ * * program for just testing props value on child component 
+ * * but we needed to pass name prop from parent component
+ * * like <App name='bhushan' />
  */
 
 import React, { Component } from 'react'

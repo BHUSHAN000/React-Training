@@ -1,4 +1,11 @@
-// Mounting phase example as a child component
+/**
+ * * Program for Mounting phase in class components as child component
+ * * It have 4 lifecycle methods
+ * * 1) first lifecycle method => constructor
+ * * 2)[] second lifecycle method => static getDerivedStateFromProps(props, state)
+ * * 3) render()
+ * * 4) componentDidMount()
+ */
 import React from "react";
 
 export default class Test8 extends React.Component {

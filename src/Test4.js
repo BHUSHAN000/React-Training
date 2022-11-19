@@ -1,8 +1,11 @@
-//Conditional rendering => JSX
-// if-else
-// element
-// ternary operator
-// && operator => short circuit operator
+/**
+ * *Conditional rendering => JSX
+ * * if-else
+ * * element
+ * * ternary operator
+ * * && operator => short circuit operator
+ */
+
 
 import React, { Component } from 'react'
 

@@ -1,5 +1,5 @@
 /**
- * Program for conditional rendering of JSX i.e button text
+ * * Program for conditional rendering of JSX i.e button text
  */
 
 import React, { Component } from 'react'

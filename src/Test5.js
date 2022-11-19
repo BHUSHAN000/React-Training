@@ -1,9 +1,9 @@
 /**
- * program for showing css use in react by 4 ways
- * 1) internal
- * 2) inline
- * 3) external
- * 4) external but using css module
+ * * program for showing css use in react by 4 ways
+ * * 1) internal
+ * * 2) inline
+ * * 3) external
+ * * 4) external but using css module
  */
 
 import React, { Component } from 'react'

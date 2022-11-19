@@ -1,5 +1,5 @@
 /**
- *  program for conditional rendering of css
+ *  * program for conditional rendering of css
  */
 
 import React, { Component } from 'react'

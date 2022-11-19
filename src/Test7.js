@@ -1,5 +1,11 @@
-// Mounting phase example
-
+/**
+ * * Program for Mounting phase in class components as parent component
+ * * It have 4 lifecycle methods
+ * * 1) first lifecycle method => constructor
+ * * 2) second lifecycle method => static getDerivedStateFromProps(props, state)
+ * * 3) render()
+ * * 4) componentDidMount()
+ */
 import React from "react";
 import "./styles.css";
 import Test8 from "./Test8";
