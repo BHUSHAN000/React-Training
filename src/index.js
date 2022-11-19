@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Test21 from './Test21';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <Test21 name='pawar'/>         // root component
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+// Prop-drilling     replacement milel in future //context API
+// setting state in class component     => this.setState({property: newValue})
+// conditional rendering of classes or Text => CSS
+// conditional rendering => JSX
+// styling and css basics
+// Event handling
+// Methods as props
+// list rendering
+// lists and keys
+// index as key
+
+// Phases of class component/ function component
+// there are 3 phases => 1) mounting 2) updating 3) unmounting
+
+// 1) mounting phase has 4 lifecycle methods
+//  a) constructor()
+//  b) render()
+//  c) getDerivedStateFromProps()
+//  d) componentDidMount()
+

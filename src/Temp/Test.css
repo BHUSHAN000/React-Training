@@ -1,0 +1,22 @@
+.abc{
+    color: black;
+    font-size: 50px;
+}
+
+
+body{
+    background-color: lightgreen;
+}
+
+.test1DivClass{
+    height: 200px;
+    border: 1px solid black;
+}
+
+.redbackground{
+    background-color: red;
+}
+
+.bluebackground{
+    background-color: blue;
+}
