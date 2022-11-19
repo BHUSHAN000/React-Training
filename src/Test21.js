@@ -1,3 +1,8 @@
+/**
+ * Program is for checking browser's focusing tab and blurring of tab 
+ * 
+ */
+
 import React, { useEffect } from "react";
 
 // User has switched back to the tab
@@ -23,9 +28,9 @@ const Test21 = () => {
             window.removeEventListener("focus", onFocus);
             window.removeEventListener("blur", onBlur);
         };
-  }, []);
+  }, [selectedDocReno]);
 
-    return <></>;
+    return <>Hello</>;
 };
 
 export default Test21;

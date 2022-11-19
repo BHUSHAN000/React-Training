@@ -14,6 +14,10 @@
  * * it only have 1 method 
  * * method is => componentWillUnmount()
 
+ * * // Rules
+ * * 1) extra side-effects can only be called in componentDidMount lifecycle method
+ * * 2) getDerivedStateFromProps won't allow you to use this operator
+ * * 3) getDerivedStateFromProps will return null if no changes done in state otherwise if changes done in state then return that updated state value
 
  */
 import React from "react";

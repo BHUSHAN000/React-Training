@@ -1,3 +1,16 @@
+/**
+ * * Program for Mounting phase in class components as child component
+ * * It have 4 lifecycle methods
+ * * 1) first lifecycle method => constructor
+ * * 2)[] second lifecycle method => static getDerivedStateFromProps(props, state)
+ * * 3) render()
+ * * 4) componentDidMount()
+ * 
+ * * // Rules
+ * * 1) extra side-effects can only be called in componentDidMount lifecycle method
+ * * 2) getDerivedStateFromProps won't allow you to use this operator
+ * * 3) getDerivedStateFromProps will return null if no changes done in state otherwise if changes done in state then return that updated state value
+ */
 import React, { Component } from 'react'
 
 export default class Test18 extends Component {
@@ -31,7 +44,3 @@ export default class Test18 extends Component {
 }
 
 
-// Rules
-// 1) extra side-effects can only be called in componentDidMount lifecycle method
-// 2) getDerivedStateFromProps won't allow you to use this operator
-// 3) getDerivedStateFromProps will return null if no changes done in state otherwise if changes done in state then return that updated state value
