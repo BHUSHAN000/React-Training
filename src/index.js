@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Test22 from './Test22';
+import Test26 from './Test26';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Test22 />         // root component
+    <Test26 />         // root component
 );
 
 
