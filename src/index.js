@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Test21 from './Test21';
+import Test22 from './Test22';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Test21 name='pawar'/>         // root component
+    <Test22 />         // root component
 );
 
 
@@ -28,3 +28,7 @@ root.render(
 //  c) getDerivedStateFromProps()
 //  d) componentDidMount()
 
+// Component phase 
+// Component mounting lifecycle =4
+// Component updating lifecycle =2
+// Component unmounting lifecycle=1
