@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Test1 from './Harshu/Test1';
+import Test32 from './Test32';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Test1 />         // root component
+    <Test32 />         // root component
 );
 
 

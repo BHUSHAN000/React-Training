@@ -17,32 +17,39 @@
  *  * ref can be created by
  *      this.refName = React.createRef(); 
  * 
+ * * this act as a parent
  */
 
-import React from 'react'
+ import React from 'react'
+import Test30 from './Test30';
 
-export default class Test28 extends React.Component {
-    constructor(props){
-        super(props);
-        this.inputRef= React.createRef();       // creation of ref in class component
+ export default class Test29 extends React.Component {
+        constructor(props){
+            super(props);
+            this.inputRef= React.createRef();       // creation of ref in class component
+        }
+    
+        componentDidMount(){
+            this.inputRef.current.focus();
+        }
+    
+        clickHandler=()=>{
+            if(this.inputRef.current.value.length >10){
+                alert('Character length is 10 or more plz remove extra characters')
+            }      
+            console.log(this.inputRef.current.value); // fetcing value from ref
+        }
+        
+    render() {
+        return (
+        <>
+            <Test30  childRef={this.inputRef}/> 
+            <br/>
+            <br/>
+            <button onClick={this.clickHandler}>Get value</button>
+        </>
+        )
     }
-
-    componentDidMount(){
-        this.inputRef.current.focus();
-    }
-
-    clickHandler=()=>{
-        console.log(this.inputRef.current.value);       // fetcing value from ref
-    }
-  render() {
-    return (
-      <>
-        <input type='text' ref={this.inputRef} />   
-        <br/>
-        <br/>
-        <button onClick={this.clickHandler}>Get value</button>
-      </>
-    )
-  }
-}
-
+ }
+ 
+ 

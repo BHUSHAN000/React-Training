@@ -17,32 +17,15 @@
  *  * ref can be created by
  *      this.refName = React.createRef(); 
  * 
+ * * this act as a child
  */
 
-import React from 'react'
+import React, { Component } from 'react'
 
-export default class Test28 extends React.Component {
-    constructor(props){
-        super(props);
-        this.inputRef= React.createRef();       // creation of ref in class component
-    }
-
-    componentDidMount(){
-        this.inputRef.current.focus();
-    }
-
-    clickHandler=()=>{
-        console.log(this.inputRef.current.value);       // fetcing value from ref
-    }
+export default class Test30 extends Component {
   render() {
     return (
-      <>
-        <input type='text' ref={this.inputRef} />   
-        <br/>
-        <br/>
-        <button onClick={this.clickHandler}>Get value</button>
-      </>
+        <input type='text' ref={this.props.childRef}/>  
     )
   }
 }
-
