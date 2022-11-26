@@ -1,11 +1,11 @@
-import React from 'react';
+import React ,{StrictMode} from 'react';
 import ReactDOM from 'react-dom/client';
-import Test36 from './Test36';
+import Test11 from './Test11';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Test36 />         // root component
+        <Test11 /> 
 );
 
 

@@ -27,7 +27,7 @@ import React, { useEffect, useState } from 'react'
 const Test36 = () => {
     const [counter1, setCounter1] =useState(0);
     const [counter2, setCounter2] =useState(10);
-
+    
     useEffect(() => {
        console.log('In useEffect hook') 
     },[counter1,counter2])           // dependancy array
