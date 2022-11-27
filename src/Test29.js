@@ -14,7 +14,7 @@
  * 
  *  * Here we are getting value of input field by clicking the button of form 
  * 
- *  * ref can be created by
+ *  * ref can be created by in class component
  *      this.refName = React.createRef(); 
  * 
  * * this act as a parent
