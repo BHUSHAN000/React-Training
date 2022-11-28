@@ -12,6 +12,7 @@ import Test14 from './Test14';
 export default class Test13 extends Component {
 
   render() {
+    console.log(this.props.name)
     return (
       <div>
       {this.props.name}

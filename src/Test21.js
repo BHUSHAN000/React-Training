@@ -36,21 +36,21 @@
 // export default Test21;
 
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 export default function Test21() {
   const selectedDocReno = Number(
     new URLSearchParams(window.location.search).get("id")
   );
-  let padeId;
+  let padeId=Window | null;
   const [val, setVal] = useState(null);
   const handler = () => {
     padeId = window.open("https://www.google.com?id=112", "mywindow");
     console.log(padeId);
     setVal(padeId);
   };
-  const onFocus = (selectedDocReno) => {
+  const onFocus = useCallback(() => {
     padeId && window.open(`https://www.google.com?id=112`, "mywindow");
-  };
+  },[padeId]);
 
   // User has switched away from the tab (AKA tab is hidden)
   const onBlur = () => {
@@ -58,7 +58,7 @@ export default function Test21() {
   };
 
   useEffect(() => {
-    window.addEventListener("focus", () => onFocus(selectedDocReno));
+    window.addEventListener("focus", () => onFocus());
     window.addEventListener("blur", onBlur);
     // Calls onFocus when the window first loads
     onFocus();
@@ -67,7 +67,7 @@ export default function Test21() {
       window.removeEventListener("focus", onFocus);
       window.removeEventListener("blur", onBlur);
     };
-  }, [selectedDocReno]);
+  }, [onFocus]);
 
   return (
     <div className="App">

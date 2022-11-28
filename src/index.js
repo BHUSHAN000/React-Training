@@ -1,11 +1,15 @@
-import React from 'react';
+import React ,{StrictMode} from 'react';
 import ReactDOM from 'react-dom/client';
+<<<<<<< HEAD
 import Test1 from './Rutul/Test1';
+=======
+import Test44 from './Test44';
+>>>>>>> 22319ee0c4555eb26c94858b46dfbb6dd2c6c1ff
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Test1 />         // root component
+        <Test44 /> 
 );
 
 
