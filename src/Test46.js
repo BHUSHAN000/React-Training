@@ -4,13 +4,14 @@
 const Test46 = () => {
     let inputRef = null;
   
+    // let inputRef= React.createRef();
     const onClick = () => {
-      console.log("INPUT VALUE: ", inputRef?.value);
+      console.log("INPUT VALUE: ", inputRef.value);   // this.inputRef.value
     };
   
     const onFocusClick = () => {
       console.log("Focus input");
-      inputRef?.focus();
+      inputRef.focus();
     };
     console.log("Rendering");
     return (

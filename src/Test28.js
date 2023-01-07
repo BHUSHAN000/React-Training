@@ -35,6 +35,7 @@ export default class Test28 extends React.Component {
         console.log(this.inputRef.current.value);       // fetcing value from ref
     }
   render() {
+    console.log(this.inputRef)
     return (
       <>
         <input type='text' ref={this.inputRef} />   

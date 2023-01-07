@@ -1,11 +1,19 @@
 import React ,{StrictMode} from 'react';
 import ReactDOM from 'react-dom/client';
-import Test44 from './Test44';
+import { Provider } from 'react-redux';
+// import App from './App';
+// import { store } from "./REDUX/store/store";
+import Test48 from './Test48';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-        <Test44 /> 
+        <>
+                {/* <Provider store={store}> */}
+
+                <Test48 /> 
+                {/* </Provider> */}
+        </>
 );
 
 
@@ -23,7 +31,7 @@ root.render(
 // Phases of class component/ function component
 // there are 3 phases => 1) mounting 2) updating 3) unmounting
 
-// 1) mounting phase has 4 lifecycle methods
+//  1) mounting phase has 4 lifecycle methods~
 //  a) constructor()
 //  b) render()
 //  c) getDerivedStateFromProps()
@@ -33,3 +41,12 @@ root.render(
 // Component mounting lifecycle =4
 // Component updating lifecycle =2
 // Component unmounting lifecycle=1
+
+// hooks
+// 1) useState
+// 2) useEffect
+
+
+// callback ref
+// forwarding ref
+// Context API
