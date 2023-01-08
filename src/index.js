@@ -1,9 +1,9 @@
 import React ,{StrictMode} from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-// import App from './App';
+import App from './App';
 // import { store } from "./REDUX/store/store";
-import Test48 from './Test48';
+// import Test48 from './Test48';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,7 +11,7 @@ root.render(
         <>
                 {/* <Provider store={store}> */}
 
-                <Test48 /> 
+                <App /> 
                 {/* </Provider> */}
         </>
 );
