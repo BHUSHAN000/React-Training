@@ -42,11 +42,44 @@ root.render(
 // Component updating lifecycle =2
 // Component unmounting lifecycle=1
 
+
+// controlled component
+// uncontrolled component
+// Pure component
+// React.memo
+
 // hooks
 // 1) useState
 // 2) useEffect
+// 3) useRef
+// 4) 
 
-
+// deboucing and throtlling
 // callback ref
 // forwarding ref
-// Context API
+// HOC
+// custom hook
+// Context API 
+
+
+// React Portal = 15 min
+// Error boundary = 30 min
+// axios        = 45 min
+
+// 4) useContext   // 10 min
+// 5) useReducer   // 30 min
+// 6) useCallback  // 20 min
+// 7) useMemo      // 20 min
+// 8) useSelector // redux
+// 9) useDispatch // redux
+
+
+// Redux   // 3 days
+
+
+// Javascript
+
+// local storage => 20 min
+// session storage => 20 min
+// cookies => 10 min
+

@@ -1,12 +1,14 @@
 // import Counter from "./REDUX/Counter";
-import Counter from './HOCFunctionComponent/Counter';
-import Hover from './HOCFunctionComponent/Hover';
+import GrandParent from './ContextAPI/GrandParent';
+// import Counter from './HOCFunctionComponent/Counter';
+// import Hover from './HOCFunctionComponent/Hover';
 
 function App() {
   return (
     <>
-      <Counter />
-      <Hover />
+      {/* <Counter />
+      <Hover /> */}
+      <GrandParent />
     </>
   );
 }
