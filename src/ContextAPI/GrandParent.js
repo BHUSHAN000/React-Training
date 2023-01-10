@@ -5,23 +5,40 @@
  *      const contextName = React.createContext()
  */
 
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import Parent from "./Parent";
 import contextName from "./Context";
-export default class GrandParent extends Component {
-  state = {
+// export default class GrandParent extends Component {
+//   state = {
+//     name: "Bhushan",
+//     counter: 0,
+//     address:'Pune'
+//   };
+//   render() {
+//     return (
+//       <>
+//         <div>GrandParent</div>
+//         <contextName.Provider value={this.state}>
+//           <Parent />
+//         </contextName.Provider>
+//       </>
+//     );
+//   }
+// }
+
+const GrandParent = () => {
+  const data = {
     name: "Bhushan",
     counter: 0,
-    address:'Pune'
+    address: "Pune",
   };
-  render() {
-    return (
-      <>
-        <div>GrandParent</div>
-        <contextName.Provider value={this.state}>
-          <Parent />
-        </contextName.Provider>
-      </>
-    );
-  }
-}
+  return (
+    <>
+      <div>GrandParent</div>
+      <contextName.Provider value={data}>
+        <Parent />
+      </contextName.Provider>
+    </>
+  );
+};
+export default GrandParent;
